@@ -15,7 +15,7 @@ import formatCurrency from '../util';
                 </a>
                 <div className="product-price">
                   <div>{formatCurrency(product.price)}</div>
-                  <button className="button primary" > Add to cart </button>
+                  <button onClick={() => this.props.addToCard(product)} className="button primary" > Add to cart </button>
                 </div>
               </div>
             </li>
